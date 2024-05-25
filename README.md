@@ -4,13 +4,13 @@ Este projeto recria a interface do usuário (UI) do perfil do Discord utilizando
 
 ## Índice
 
-- [Visão Geral](#visão-geral)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Estrutura de Arquivos](#estrutura-de-arquivos)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
+- [Visão Geral](#-visão-geral)
+- [Funcionalidades](#--funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Instalação](#-instalação)
+- [Estrutura de Arquivos](#-estrutura-de-arquivos)
+- [Contribuições](#-contribuições)
+- [Licença](#-licença)
 
 ## 📋 Visão Geral
 
