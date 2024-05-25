@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Settings */
+
+:root {
+    --primary-color: rgb(73, 93, 145);
+    --primary-color-light: rgb(90, 113, 170); 
+    --secundary-color: rgb(4, 19, 54);
+    --secundary-color-light: rgb(10, 32, 84);
+    --dark-mode: rgb(0, 0, 21);
+    --white-mode: rgb(255, 232, 235);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: white;
+    background-color: var(--dark-mode);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.links{
+    text-decoration: none;
+    color: #00A8FC;
+}
+
+/* Card Settings */
+.card {
+    height: 644px;
+    width: 340px;
+    border-radius: 4px;
+    border: 4px solid;
+    border-image:  linear-gradient(to top, var(--dark-mode), var(--primary-color-light)) 1;
+    background: linear-gradient(to top, var(--secundary-color), var(--primary-color));
+}
+
+.card-banner{
+    height: 120px;
+    width: 100%;
+}
+
+.card-icon{
+    position: relative;
+    top: -40px;
+    left: 12px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #364979;
+    border-radius: 50%;
+}
+
+.card-status{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--secundary-color-light);
+}
+
+.card-badges {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 136px;
+    height: 24px;
+    top: -70px;
+    left: 175px;
+    background-color: var(--secundary-color-light);
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.card-props {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    position: relative;
+    top: -60px;
+    height: calc(100% - 202px);
+    margin: 12px;
+    border-radius: 4px;
+    background-color: var(--secundary-color);
+}
+
+.user-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.user-banner{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.user-status{
+    height: 16px;
+    width: 16px;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.nick{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pronouns{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+.active_developer, .nitro, .booster, .first_name, .mission{
+    height: 20px;
+}
+
+.hypersquard{
+    height: 16px;
+}
+
+.card-props .line1{
+    display: flex;
+    align-items: center;
+    height: 1px;
+    width: 100%;
+    background: var(--secundary-color-light);
+    margin-top: 12px;
+}
+
+.props-aboutme{
+    margin-top: 12px;
+}
+
+.aboutme{
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.cheetah-emoji{
+    margin-left: 10px;
+}
+
+.discord-emojis{
+    height: 16px;
+    width: 16px;
+}
+
+.props-status{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.status-emoji{
+    width: 24px;
+    height: 24px;
+}
+
+.status-message{
+    font-size: 16px;
+}
+
+/* Activity */ 
+
+.activity{
+    margin-bottom: 12px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.activity-music{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.activity-content {
+    margin-left: 6px;
+}
+
+.activity-image{
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+}
+
+.music-name, .music-artist, .music-album{
+    text-decoration: none;
+    color: #fff;
+}
+
+.music-name{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.music-artist, .music-album{
+    font-size: 14px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #5f5f5f;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.times{
+    display: flex;
+    flex-direction: row;
+}
+
+.listened-time-music{
+    font-size: 12px;
+    flex: 1;
+}
+
+.total-time-music{
+    font-size: 12px;
+}
+
+/* Notes Settings */
+
+.notes{
+    flex: 1;
+    display: flex;
+}
+
+.notes{
+    flex: 1;
+    display: flex;
+}
+
+.notes-user {
+    color: #fff;
+    position: relative;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.notes-user
+
+.notes-user::placeholder {
+    font-size: 12px;
+}
+
+.notes-user:focus {
+    background-color: var(--secundary-color-light);
+}
+
+.notes-user:focus::placeholder{
+    color: transparent;
+}
+
+.notes-label{
+    position: absolute;
+    padding: 6px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Message Settings */
+
+.messages{
+    flex: 1;
+    display: flex;
+
+    display: flex;
+    align-items: center;
+}
+
+.send-message {
+    color: #fff;
+    position: relative;
+    margin-top: 12px;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secundary-color-light);
+}
+
+.send-message::placeholder{
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.send-message:focus::placeholder{
+    color: transparent;
+}
+
+/* Theme Settings */
+.theme-switch-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 70px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    border-radius: 34px;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: var(--dark-mode);
+    border-radius: 50%;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: var(--dark-mode);
+}
+
+input:checked + .slider:before {
+    background-color: var(--white-mode);
+    transform: translateX(36px);
+}
+
+.white-mode {
+    background-color: var(--white-mode);
+}
